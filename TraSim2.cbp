@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TraSim2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TraSim2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TraSim2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Coordinate.h" />
+		<Unit filename="include/Node.h" />
+		<Unit filename="include/Simulator.h" />
+		<Unit filename="include/TrafficSemaphoresSystem.h" />
+		<Unit filename="include/Utils.h" />
+		<Unit filename="include/Vector2D.h" />
+		<Unit filename="include/Vehicle.h" />
+		<Unit filename="include/Via.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Coordinate.cpp" />
+		<Unit filename="src/Node.cpp" />
+		<Unit filename="src/Simulator.cpp" />
+		<Unit filename="src/TrafficSemaphoresSystem.cpp" />
+		<Unit filename="src/Utils.cpp" />
+		<Unit filename="src/Vector2D.cpp" />
+		<Unit filename="src/Vehicle.cpp" />
+		<Unit filename="src/Via.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,115 @@
+# depslib dependency file v1.0
+1749763822 source:/home/jose/externo/projects/codeblocks/TraSim2/main.cpp
+	<iostream>
+	<fstream>
+	<unistd.h>
+	"Simulator.h"
+	"Utils.h"
+
+1746226095 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Coordinate.cpp
+	"Coordinate.h"
+	<cmath>
+
+1746639555 /home/jose/externo/projects/codeblocks/TraSim2/include/Coordinate.h
+	<iostream>
+	<Vector2D.h>
+	<cmath>
+
+1746657040 /home/jose/externo/projects/codeblocks/TraSim2/include/Vector2D.h
+	<ostream>
+
+1746813789 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Vector2D.cpp
+	"Vector2D.h"
+	<cmath>
+	<iostream>
+	"Utils.h"
+
+1749764466 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Simulator.cpp
+	<fstream>
+	<thread>
+	"Simulator.h"
+	"Utils.h"
+
+1749028846 /home/jose/externo/projects/codeblocks/TraSim2/include/Simulator.h
+	<ctime>
+	<vector>
+	<map>
+	<iostream>
+	"Coordinate.h"
+	"Vehicle.h"
+	"Via.h"
+	"TrafficSemaphoresSystem.h"
+
+1749764893 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Via.cpp
+	<cmath>
+	"Via.h"
+	"Utils.h"
+
+1749025164 /home/jose/externo/projects/codeblocks/TraSim2/include/Via.h
+	<string>
+	<ctime>
+	<random>
+	"Node.h"
+	"Vehicle.h"
+	"Simulator.h"
+
+1749763652 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Node.cpp
+	<string>
+	"Node.h"
+	"Utils.h"
+
+1748977747 /home/jose/externo/projects/codeblocks/TraSim2/include/Node.h
+	<string>
+	<map>
+	<vector>
+	"Simulator.h"
+	"Via.h"
+	"Vector2D.h"
+	"Vehicle.h"
+
+1748976209 /home/jose/externo/projects/codeblocks/TraSim2/include/Vehicle.h
+	<ctime>
+	<random>
+	"Simulator.h"
+	"Via.h"
+	"Node.h"
+
+1748978241 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Vehicle.cpp
+	"Vehicle.h"
+	<stdlib.h>
+
+1747430814 source:/home/jose/externo/projects/codeblocks/TraSim2/src/Utils.cpp
+	<iostream>
+	<cmath>
+	"Utils.h"
+
+1746656909 /home/jose/externo/projects/codeblocks/TraSim2/include/Utils.h
+	<string>
+	<vector>
+	<ctime>
+	<ostream>
+
+1748424337 source:/home/jose/externo/projects/codeblocks/TraSim2/src/TrafficSemaphore.cpp
+	"TrafficSemaphore.h"
+
+1748424133 /home/jose/externo/projects/codeblocks/TraSim2/include/TrafficSemaphore.h
+	<ctime>
+	<string>
+	<map>
+	<vector>
+	"Simulator.h"
+	"Via.h"
+
+1749026335 /home/jose/externo/projects/codeblocks/TraSim2/include/TrafficSemaphoresSystem.h
+	<ctime>
+	<string>
+	<map>
+	<vector>
+	<fstream>
+	"Simulator.h"
+	"Via.h"
+
+1749764381 source:/home/jose/externo/projects/codeblocks/TraSim2/src/TrafficSemaphoresSystem.cpp
+	<TrafficSemaphoresSystem.h>
+	"Utils.h"
+

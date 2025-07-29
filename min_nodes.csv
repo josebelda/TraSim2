@@ -1,0 +1,5 @@
+WKT,name,description
+"POINT (0 1)",Point 1,
+"POINT (1 1)",Point 2,
+"POINT (1 0)",Point 3,
+"POINT (0 0)",Point 4,

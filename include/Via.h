@@ -2,7 +2,6 @@
 #define VIA_H
 
 #include <string>
-#include <sstream>
 #include <ctime>
 #include <random>
 
@@ -29,11 +28,10 @@ class PositionVehicle{
 class Via
 {
     public:
-        const double SAFETY_DISTANCE_TO_INCORPORATE = 50.0;
+        static double SAFETY_DISTANCE_TO_INCORPORATE;
 
-        const double GENERIC_SPEED_LIMIT = 11.11; // 11.11 m/s = approx 40 Km/h
+        static double GENERIC_SPEED_LIMIT;
 
-        static int nextId;
 
         string id;
         Node *node1;
@@ -41,6 +39,7 @@ class Via
         double vehiclesCreationRate;
         double vehiclesVanishingRate;
         string name;
+        size_t numberOfLanes;
 
         Simulator *simulator;
         Vector2D *n;
@@ -50,23 +49,35 @@ class Via
 
 
         default_random_engine gen;
-        uniform_int_distribution<int> *discUniform;
+
 
         Via(Node *n1,
             Node *n2,
             double vcr,
             double vvr,
             string n,
+            size_t nLanes,
             Simulator *sim);
         virtual ~Via(){}
 
         bool canIncorporateToPosition(vector<PositionVehicle*> *ps, double p, double length);
-        Vector2D *getFreePosition(double length);
+        Vector2D *getFreePosition(double length, size_t lane);
         void incorporateVehicleProb();
+        void vanishVehicleProb();
+        bool canEnter(double length, size_t lane);
+
+        friend ostream &operator<<(ostream &o, Via *v);
+
+        static void fromCsv(string line, Simulator *sim);
+
+        Vehicle *incorporateVehicle();
+        void vanishVehicle();
 
     protected:
 
     private:
+
+        vector<PositionVehicle*> *getPositionsVehicles(size_t lane);
 };
 
 #endif // VIA_H

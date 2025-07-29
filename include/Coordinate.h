@@ -19,6 +19,9 @@ class Coordinate
         Coordinate(double lat, double lon) : latitude(lat),longitude(lon){}
         virtual ~Coordinate(){};
         Vector2D *translate(Coordinate *origin);
+        Coordinate *clone(){
+            return new Coordinate(latitude,longitude);
+        }
 
         friend ostream &operator<<(ostream &o, Coordinate *c);
 

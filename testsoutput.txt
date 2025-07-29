@@ -1,0 +1,137 @@
+SimulatorInitial time2915-05-20 01:30:15
+End time2915-05-20 01:30:25
+Vehicles:
+Nodes:
+Node id: 1
+Node name:
+Node coordinates:(lat=35.8964,long=-5.32655)
+Node position:(775.073,-583.251)
+Connections: 
+Via in: 2-1
+    Lane in: 0
+        Via out: 1-3
+        Lane out: 0
+Via in: 4-1
+    Lane in: 0
+        Via out: 1-2
+        Lane out: 0
+    Lane in: 1
+        Via out: 1-3
+        Lane out: 0
+
+Node id: 2
+Node name:
+Node coordinates:(lat=35.8962,long=-5.32671)
+Node position:(758.405,-601.142)
+Connections: 
+Via in: 1-2
+    Lane in: 0
+        Via out: 2-3
+        Lane out: 0
+Via in: 3-2
+    Lane in: 0
+        Via out: 2-1
+        Lane out: 0
+
+Node id: 3
+Node name:
+Node coordinates:(lat=35.8962,long=-5.32668)
+Node position:(752.122,-597.862)
+Connections: 
+Via in: 1-3
+    Lane in: 0
+        Via out: 3-2
+        Lane out: 0
+        Via out: 3-4
+        Lane out: 0
+Via in: 2-3
+    Lane in: 0
+        Via out: 3-4
+        Lane out: 0
+
+Node id: 4
+Node name:
+Node coordinates:(lat=35.8961,long=-5.32656)
+Node position:(748.498,-585.041)
+Connections: 
+Via in: 3-4
+    Lane in: 0
+        Via out: 4-1
+        Lane out: 0
+    Lane in: 1
+        Via out: 4-1
+        Lane out: 1
+
+Vias:
+Via: 
+Id :1-2
+Name :
+Node 1: 1
+Node 2: 2
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 24.4525
+Speed limit: 11.11
+
+Via: 
+Id :2-1
+Name :
+Node 1: 2
+Node 2: 1
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 24.4525
+Speed limit: 11.11
+
+Via: 
+Id :1-3
+Name :
+Node 1: 1
+Node 2: 3
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 27.2069
+Speed limit: 11.11
+
+Via: 
+Id :2-3
+Name :
+Node 1: 2
+Node 2: 3
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 7.08731
+Speed limit: 11.11
+
+Via: 
+Id :3-2
+Name :
+Node 1: 3
+Node 2: 2
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 7.08731
+Speed limit: 11.11
+
+Via: 
+Id :3-4
+Name :
+Node 1: 3
+Node 2: 4
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 13.3234
+Speed limit: 11.11
+
+Via: 
+Id :4-1
+Name :
+Node 1: 4
+Node 2: 1
+Vehicles creation rate: 0.001
+Vehicles vanishing rate: 0.001
+Length: 26.6358
+Speed limit: 11.11
+
+Coordinates origin: (lat=35.8894,long=-5.3213)
+
